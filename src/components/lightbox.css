@@ -1,0 +1,45 @@
+/* lightbox.css */
+.lightbox {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5); /* Semi-transparent background */
+    z-index: 1000; /* Ensure the lightbox is on top of other elements */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .lightbox-content {
+    background-color: white;
+    padding: 40px;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2); /* Add a shadow effect */
+    max-width: 40%; /* Limit the width of the lightbox content */
+  }
+  
+  .lightbox-close {
+    position: absolute;
+    top: 300px;
+    right: 445px;
+    cursor: pointer;
+  }
+  
+  .body-scroll-lock {
+    overflow: hidden;
+  }
+
+  @media only screen and (max-width: 600px) {
+    .lightbox-content {
+      max-width: 60%; /* Adjust the width for smaller screens */
+      padding: 30px; /* Reduce padding for smaller screens */
+    }
+  
+    .lightbox-close {
+      top: 185px; /* Adjust close button position for smaller screens */
+      right: 90px;
+      font-size: 16px; /* Reduce font size for close button */
+    }
+  }

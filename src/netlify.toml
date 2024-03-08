@@ -1,0 +1,7 @@
+[build]
+  command = "node src/server.js"  # If you have a build step for your Express app
+  functions = "E:\stockgrader\Smile Again 3\src\server.js"     # Path to the directory containing your server code
+  publish = "E:\stockgrader\Smile Again 3\build"         # Path to the directory containing your React app build
+
+[build.environment]
+  MONGODB_URI = "mongodb+srv://vittalkatwe:8431465059@cautious.rh2qklo.mongodb.net/?retryWrites=true&w=majority&appName=cautious" # Set your MongoDB URI here
